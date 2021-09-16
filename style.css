@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;700&display=swap');
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;	
+	margin: 0;
+	padding: 0;	
+}
+
+body {
+	margin: 0;
+	font-family: 'Noto Sans JP', sans-serif;
+	line-height: 1.6;	
+}
+
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+h1,
+h2,
+h3,
+p {
+	margin: 0;
+}
+
+.wrap {
+	overflow: hidden;
+}
+
+.header{
+	width: 100%;
+	height: 80px;
+	display: block;
+	background: #101010;
+	margin: 0 auto;
+}
+
+.header-container{
+	width: 1000px;
+	height: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+.logo{
+	height: 100%;
+	float: left;
+}
+
+.logo img{
+	width: 160px; 
+	height: 70px;
+	margin-top: 5px;
+
+}
+
+.navigation{
+	height: 100%;
+	float: right;
+}
+
+.navigation a:last-child{
+}
+
+.navigation a{
+	height: 100%;
+	display: table;
+	float: left;
+	padding: 0 20px;
+}
+
+.navigation a li{
+	display: table-cell;
+	vertical-align: middle;
+	color: white;
+	font-family: 'Montserrat', sans-serif;	
+	transition: all 0.3s;		
+}
+
+.navigation a li:hover {
+	color: #4169E1;
+}
+
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  display: none;
+}
+
+section{
+	padding: 50px 0;
+}
+
+.container {
+	width: 85%;
+	margin: 0 auto;
+	max-width: 65em;
+}
+
+.split {
+	display: flex;
+	gap: 20px;
+	min-width: 15em;
+	justify-content: center;
+}
+
+.hero p, 
+header .btn {
+	margin-top: 20px;
+}
+
+
+.btn{
+	display: inline-block;
+	text-decoration: none;
+	padding: .5em 1.25em;
+	background: #4d94ff;
+	color: white;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 1.125em;
+	border-radius: 4px;
+	transition: all 0.2s;
+}
+
+.btn:hover {
+	background-color: #1a75ff;
+	transform:scale(1.1,1.2); 
+}
+
+.main-title {
+	font-size: 4rem;
+	line-height: 1;
+	text-transform: uppercase;
+}
+
+.section-title {
+	text-align: center;
+	font-size: clamp(2.5rem, calc(5vw + 1rem), 4rem);
+	line-height: 1.5;
+	color: #17353d;
+	margin-bottom: 40px;
+}
+
+.hero {
+	color: white;
+	text-align: center;
+	padding: 15em 0;
+	background-blend-mode: multiply;
+	background: 
+		url(shoe-3.png),
+		radial-gradient(#444, #111);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;	
+}
+
+.featured{
+	background: #eee;
+	display: block;
+
+}
+.featured_item {
+	display: block;
+	position: relative;
+	transform: scale(.85);
+	transition: all 0.3s;
+	text-decoration: none;
+	color: #333;
+	text-align: center;
+	line-height: 1.2;
+
+}
+
+.featured_details {
+	opacity: 0;
+	transition: all 0.2s linear;	
+
+}
+.featured_item:hover,
+.featured_item:focus {
+	transform: scale(1);	
+}
+
+
+span {
+	display: block;
+	font-weight: 700;
+	font-size: 40px;
+}
+
+.featured_item:hover .featured_details,
+.featured_item:focus .featured_details {
+	opacity: 1;	
+	text-shadow: 0 0 1em rgba(#fff, .25);
+}
+
+
+.spacing > *{
+	margin-top: 30px;
+}
+
+.featured_item::after {
+	content: "";
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	padding: 75% 75% 0 0 ;
+	border-radius: 50%;
+	background: #2193b0;
+	z-index: -1;	
+}
+
+
+/*Our products*/
+.product {
+	background: radial-gradient(var(--clr-inner, green), var(--clr-outer, #00FFFF));
+	padding: 40px;
+	margin-bottom: 70px;
+	border-radius: 50px;
+	text-align: center;
+}
+
+.product_title {
+	font-size: 40px;
+	text-transform: uppercase;
+	line-height: 1;
+	color: #fff;
+	text-shadow: 0 0 .2em rgba(#000 , .2);
+}
+
+.product_img {
+	margin: -5em 0 0 0;
+}
+
+
+.vans {
+	--clr-inner: #faa700;
+	--clr-outer: #e48d00;
+}
+
+.vans .btn{
+	display: inline-block;
+	text-decoration: none;
+	padding: .5em 1.25em;
+	background: #A52A2A;
+	color: white;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 1.125em;
+	border-radius: 4px;
+	transition: all 0.2s;
+}
+
+.puma {
+	--clr-inner: #6dd5ed;
+	--clr-outer: #2193b0;
+}
+
+.puma .btn{
+	display: inline-block;
+	text-decoration: none;
+	padding: .5em 1.25em;
+	background: #008B8B;
+	color: white;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 1.125em;
+	border-radius: 4px;
+	transition: all 0.2s;
+}
+
+.luis {
+	--clr-inner: #bda476;
+	--clr-outer: #9f8453; 
+}
+
+.luis .btn{
+	display: inline-block;
+	text-decoration: none;
+	padding: .5em 1.25em;
+	background: #2f4858;
+	color: white;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 1.125em;
+	border-radius: 4px;
+	transition: all 0.2s;
+}
+
+/**about part**/
+.about {
+	border-top: 1px solid black;
+	min-height: 80vh;	
+	position: relative;
+}
+
+.about_title{
+	text-align: center;
+	font-size: clamp(2.5rem, calc(5vw + 1rem), 4rem);
+	line-height: 1.5;
+	color: #17353d;
+	margin-bottom: 40px;
+}
+
+.about img {
+	border-radius: 5%;
+	height: 180px;
+	width: 180px;
+}
+
+.about p {
+	margin: 20px;	
+}
+
+/*About us part*/
+.aboutUs {
+	position: relative;
+	min-height: 100vh;
+	padding: 50px 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-blend-mode: multiply;
+
+	background: 
+		url(https://cdn.pixabay.com/photo/2019/10/03/19/57/japan-4524260_960_720.jpg),
+		radial-gradient(#888, #888);
+	background-size: cover;
+}
+
+.aboutUs-content {
+	max-width: 800px;
+	text-align: center;
+	color: #fff;
+}
+
+.aboutUs-content h3 {
+	text-align: center;
+	font-size: clamp(2.5rem, calc(5vw + 1rem), 4rem);
+	line-height: 1.5;
+	color: #fff;
+	margin-bottom: 40px;
+
+}
+
+.info-text {
+	font-size: 36px;
+	font-weight: 500;
+	color: #fff;
+}
+
+.aboutUs-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.aboutUs-container .info {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+
+.aboutUs-container .info .box {
+	position: relative;
+	padding: 20px 0;
+	display: flex;
+}
+
+.aboutUs-container .info .box .fas {
+	min-width: 60px;
+	height: 60px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	font-size: 22px;
+}
+
+.info-text {
+	display: flex;
+	margin-left: 20px;
+	font-size: 16px;
+	flex-direction: column;
+}
+
+.info-text h4 {
+	color: #6495ed;
+}
+
+
+/*-----Contact form------*/
+
+.contact-form {}
+
+.contact-wrapper {
+	max-width: 500px;
+	width: 100%;
+	margin: 20px auto;
+	padding: 30px;
+
+}
+
+.contact-wrapper p {
+	text-transform: uppercase;	
+	font-size: 32px;
+	font-weight: 700;
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+.contact-wrapper form {
+	width: 100%;
+}
+
+.contact-wrapper .inputBox {
+	margin-bottom: 15px;
+	display: flex;
+	align-items: center;
+}
+
+.contact-wrapper .inputBox label {
+	width: 200px;
+	margin-right: 10px;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.contact-wrapper .inputBox .input,
+.contact-wrapper .inputBox textarea {	
+	width: 100%;
+	outline: none;
+	border: 1px solid #333;
+	font-size: 15px;
+	padding: 8px 10px;
+	border-radius: 5px;
+	transition: all 0.3s ease;
+}
+
+.contact-wrapper .inputBox textarea {
+	resize: none;
+	height: 125px;
+}
+
+.contact-wrapper .inputBox .input:focus,
+.contact-wrapper .inputBox textarea:focus {
+	border: 2px solid #333;
+}
+
+.contact-wrapper .inputBox .submit {
+	width: 100%;
+	padding: 16px 20px;
+	font-size: 15px;
+	border-radius: 4px;		
+	border: 0;
+	border-bottom: 2px solid #333 ;
+	border-right: 2px solid #333 ;	
+	cursor: pointer;
+	background: #4da6ff;
+	color: white;
+	box-shadow: 1px 2px #696969;
+	transition: all 0.2s ease;
+}
+
+.contact-wrapper .inputBox .submit:hover{
+		background: #1a8cff;
+}
+
+.contact-wrapper .inputBox .submit:active {
+	box-shadow: none;
+	position: relative;
+	top: 4px;
+	left: 5px;
+}
+
+/*Footer part*/
+footer {
+	height: 80px;
+	width: 100%;
+	bottom: 0;
+	background: #555;
+	color: white;
+	background: #101010;
+
+}
+
+
+footer p {
+  color: #b3aeb5;
+  font-size: 12px;
+
+}
+
+.footer-left {	
+	float: left;
+  padding-top: 30px;		
+}
+
+.footer-right {
+	float: right;
+}
+
+.footer-right h4 {
+	text-align: center;
+	letter-spacing: 3px;
+}
+
+.footer-right ul {
+	display: flex;
+}
+
+.footer-right ul li {
+	list-style: none;
+	margin: 10px 15px 0 15px;
+}
+
+.footer-right ul li .fa{
+	font-size: 30px;
+	line-height: 60px;
+	color: #999;
+
+}

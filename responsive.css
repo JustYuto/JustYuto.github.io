@@ -1,0 +1,61 @@
+@media all and (max-width: 1000px ) {
+	
+	.header-container {
+		width: 700px;
+		margin: 0 auto;
+	}
+	.navigation {
+		display: ;
+	}
+	.aboutUs-container .info {
+		width: 100%;
+	}
+	
+	.contact {
+		aboutUs: 50px;
+	}
+
+	.aboutUs-content p {
+		text-align: left;
+	}
+
+	.aboutUs-container {
+		flex-direction: column;
+	}
+	.aboutUs-container .info {
+		margin: 100px;
+	}		
+} 
+
+@media all and (max-width:  640px) {
+	.header-container {
+		width: 400px;
+		margin: 0 auto;
+	}
+
+	.navigation {
+		display: none;
+	}	
+	.menu-icon {
+		position: relative;
+		display: block;
+		cursor: pointer;
+		margin: 0 20 0 auto;
+		padding: 30px 50px 30px 0;
+		height: 90px;
+		width: 90px;
+	}
+
+	.product {
+		text-align: left;
+	}
+	.product_img {
+		float: right;
+		width: 50%;
+	}
+	.about {
+		text-align: center;
+	}
+	.about img {
+		float: left;
+}
